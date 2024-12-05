@@ -17,7 +17,7 @@ def send_booking_email(to_email, customer_name, booking_id, room_name, check_in_
     # Your SMTP server credentials (use your actual details)
     smtp_host = 'smtp.gmail.com'
     smtp_port = 587
-    smtp_username = "hoteloberoibooking@gmail.com" #os.getenv("SMTP_USERNAME")
+    smtp_username =  #os.getenv("SMTP_USERNAME")
     smtp_password = "lifu eays obar fqjn"#os.getenv("SMTP_PASSWORD")  # Use App Password if 2FA is enabled
 
     # Load the email template
