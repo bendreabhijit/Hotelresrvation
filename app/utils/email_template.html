@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #4CAF50;
+            font-size: 30px;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888888;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Hotel Oberoi</h1>
+            <p>Thank you for choosing us!</p>
+        </div>
+        <div class="content">
+            <h2>Booking Confirmation</h2>
+            <p>Dear {{customer_name}},</p>
+            <p>We are pleased to inform you that your room booking has been successfully confirmed. Below are your booking details:</p>
+            <ul>
+                <li><strong>Booking ID:</strong> {{booking_id}}</li>
+                <li><strong>Room:</strong> {{room_name}}</li>
+                <li><strong>Check-in Date:</strong> {{check_in_date}}</li>
+                <li><strong>Check-out Date:</strong> {{check_out_date}}</li>
+            </ul>
+            <p>If you have any questions or need further assistance, feel free to reach out to our support team at <strong>support@hoteloberoi.com</strong>.</p>
+            <p>We look forward to welcoming you to our hotel!</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Hotel Oberoi. All rights reserved.</p>
+            <!-- <p><a href="https://www.hoteloberoi.com">Visit our website</a></p> -->
+        </div>
+    </div>
+</body>
+</html>
